@@ -59,5 +59,17 @@ export const appConfig: ApplicationConfig = {
      * @see {@link routes}
      */
     provideRouter(routes),
+
+    /**
+     * Proveedor del cliente HTTP.
+     *
+     * @remarks
+     * Configura `HttpClient` con interceptores personalizados
+     * para manejar peticiones y respuestas HTTP de forma
+     * centralizada.
+     *
+     * @see {@link clientAngularInterceptor}
+     */
+    provideHttpClient(),
   ]
 };
