@@ -61,26 +61,14 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
 
     /**
-     * Proveedor del cliente HTTP de Angular.
+     * Proveedor del cliente HTTP.
      *
      * @remarks
-     * Habilita el uso de `HttpClient` en toda la aplicación
-     * para realizar peticiones HTTP.
+     * Configura `HttpClient` con interceptores personalizados
+     * para manejar peticiones y respuestas HTTP de forma
+     * centralizada.
      *
-     * Puede extenderse con interceptores mediante
-     * `withInterceptors()` para:
-     * - Manejo global de estados de carga
-     * - Autenticación
-     * - Manejo centralizado de errores
-     *
-     * @example
-     * ```ts
-     * provideHttpClient(
-     *   withInterceptors([loadingInterceptor, errorInterceptor])
-     * )
-     * ```
-     *
-     * @see {@link HttpClient}
+     * @see {@link clientAngularInterceptor}
      */
     provideHttpClient(),
   ]

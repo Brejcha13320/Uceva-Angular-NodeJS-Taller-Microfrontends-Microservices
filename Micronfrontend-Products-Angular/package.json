@@ -1,5 +1,5 @@
 {
-  "name": "microfrontend-users-angular",
+  "name": "microfrontend-products-angular",
   "version": "0.0.0",
   "scripts": {
     "start": "ng serve",
